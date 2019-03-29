@@ -8,17 +8,18 @@ typedef int DataType;
 
 typedef struct Stack
 {
+	
 	DataType* _a;
-	int _top;		// Õ»¶¥
-	int _capacity;  // ÈİÁ¿ 
+	int _top;		// æ ˆé¡¶
+	int _capacity;  // å®¹é‡ 
 }Stack;
 
-void StackInit(Stack* ps);//³õÊ¼»¯Õ»
-void StackDestory(Stack* ps);//Ïú»ÙÕ»
-void StackPush(Stack* ps, DataType x);//·ÅÈëÔªËØ
-void StackPop(Stack* ps);//µ¯³öÔªËØ
-DataType StackTop(const Stack* ps);//²éÕÒÕ»¶¥µÄÔªËØ£¨¼´½«±»µ¯³öµÄÔªËØ£©
-int StackEmpty(const Stack* ps);//ÅĞ¶ÏÕ»ÊÇ·ñÎª¿Õ
-int StackSize(const Stack* ps);//·µ»ØÕ»ÖĞÓĞ¶àÉÙ¸öÔªËØ
+void StackInit(Stack* ps);//åˆå§‹åŒ–æ ˆ
+void StackDestory(Stack* ps);//é”€æ¯æ ˆ
+void StackPush(Stack* ps, DataType x);//æ”¾å…¥å…ƒç´ 
+void StackPop(Stack* ps);//å¼¹å‡ºå…ƒç´ 
+DataType StackTop(const Stack* ps);//æŸ¥æ‰¾æ ˆé¡¶çš„å…ƒç´ ï¼ˆå³å°†è¢«å¼¹å‡ºçš„å…ƒç´ ï¼‰
+int StackEmpty(const Stack* ps);//åˆ¤æ–­æ ˆæ˜¯å¦ä¸ºç©º
+int StackSize(const Stack* ps);//è¿”å›æ ˆä¸­æœ‰å¤šå°‘ä¸ªå…ƒç´ 
 void TestStack();
 
