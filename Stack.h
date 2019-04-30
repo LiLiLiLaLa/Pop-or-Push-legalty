@@ -4,6 +4,7 @@
 #include <malloc.h>
 #include <assert.h>
 
+
 typedef int DataType;
 
 typedef struct Stack
